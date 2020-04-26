@@ -1,0 +1,15 @@
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #ff7272;
+}
+
+.tab:selected {
+    -fx-background-color: #ffa4a4;
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler {
+    -jfx-rippler-fill: white;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-background-color: white;
+}
