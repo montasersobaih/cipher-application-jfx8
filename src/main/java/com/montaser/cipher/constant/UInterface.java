@@ -2,7 +2,5 @@ package com.montaser.cipher.constant;
 
 public final class UInterface {
 
-    private static final String BASE_PATH = "/interface/";
-
-    public static final String MAIN_INTERFACE = BASE_PATH.concat("main_interface.fxml");
+    public static final String MAIN_INTERFACE = ResourcePath.INTERFACE.concat("main_interface.fxml");
 }
