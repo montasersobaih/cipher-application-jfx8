@@ -1,0 +1,5 @@
+.button {
+    -fx-background-color: #ff7272;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
