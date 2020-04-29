@@ -5,17 +5,14 @@ import com.montaser.cipher.constant.enumeration.DialogTitle;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.StackPane;
 
-public abstract class BaseDialog<L extends Region> extends JFXDialog {
-
-    protected DialogTitle title;
+public abstract class BaseDialog<R extends Region> extends JFXDialog {
 
     public BaseDialog(StackPane pane, DialogTitle title) {
-        this.title = title;
         super.setDialogContainer(pane);
         super.setOverlayClose(true);
-        super.setContent(initLayout());
+        super.setContent(initLayout(title));
         super.setTransitionType(DialogTransition.CENTER);
     }
 
-    public abstract L initLayout();
+    protected abstract R initLayout(DialogTitle title);
 }
